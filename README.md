@@ -10,7 +10,7 @@ Leo is a multi-agent study assistant built with **Microsoft AutoGen AgentChat** 
 - Structured quiz and evaluation JSON outputs.
 - Feedback loop: scores below 70% trigger targeted re-teaching and a follow-up quiz.
 - Local student memory remembers studied topics and recent scores.
-- API credentials are read from `.env`; no key is committed.
+- API credentials are read from `.env`.
 
 ## Architecture
 
