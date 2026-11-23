@@ -90,18 +90,6 @@ CLI fallback:
 python cli.py
 ```
 
-## Demo video (3–5 minutes)
-
-Suggested recording sequence:
-
-1. Show the project and `.env.example` (do not show the real API key).
-2. Start Gradio and enter a student name, level and topic such as “Python for loops”.
-3. Show the Explainer lesson and the Quiz Master's five questions.
-4. Explain the visible handoff trace: Coordinator → Explainer → Quiz Master.
-5. Submit a mixture of correct and incorrect answers.
-6. Show Evaluator scoring and per-question feedback.
-7. If the score is below 70%, show the Evaluator → Explainer re-teaching → Quiz Master follow-up loop.
-8. Mention that the topic and score are stored in local student memory.
 
 ## Project structure
 
@@ -121,6 +109,17 @@ leo_multi_agent_tutor/
 │   └── tutor.py
 └── data/
 ```
+![Implemented architecture](image.png)
+
+## Technology configuration
+# Component	Configuration
+- Framework:	Microsoft AutoGen
+- Main UI:	Gradio
+- CLI fallback:	Python
+- API:	CheaperInference
+- Model:	deepseek-v4.1-flash-1017
+- Memory:	Local JSON
+- Orchestration:    Sequential handoffs
 
 ## Notes and troubleshooting
 
