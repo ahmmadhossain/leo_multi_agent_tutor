@@ -112,7 +112,7 @@ leo_multi_agent_tutor/
 ![Implemented architecture](image.png)
 
 ## Technology configuration
-# Component	Configuration
+### Component	Configuration
 - Framework:	Microsoft AutoGen
 - Main UI:	Gradio
 - CLI fallback:	Python
